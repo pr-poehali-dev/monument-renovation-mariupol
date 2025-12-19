@@ -256,7 +256,14 @@ const Index = () => {
                   <Icon name="Phone" className="text-accent mt-1" size={24} />
                   <div>
                     <p className="font-semibold">Телефон</p>
-                    <p className="text-muted-foreground">+38 (000) 000-00-00</p>
+                    <a href="tel:+79490732315" className="text-muted-foreground hover:text-accent transition-colors">+7 (949) 073-23-15</a>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="Send" className="text-accent mt-1" size={24} />
+                  <div>
+                    <p className="font-semibold">Telegram</p>
+                    <a href="https://t.me/GKgranit19" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">@GKgranit19</a>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
