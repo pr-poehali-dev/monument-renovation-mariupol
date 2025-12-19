@@ -106,13 +106,21 @@ const Index = () => {
             Профессиональное изготовление, установка и ремонт памятников в Мариуполе
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" onClick={() => scrollToSection('services')} className="bg-accent hover:bg-accent/90 text-white">
-              <Icon name="ArrowRight" className="mr-2" size={20} />
-              Наши услуги
+            <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-white">
+              <a href="tel:+79490732315">
+                <Icon name="Phone" className="mr-2" size={20} />
+                Позвонить
+              </a>
             </Button>
-            <Button size="lg" variant="outline" onClick={() => scrollToSection('contacts')}>
-              <Icon name="Phone" className="mr-2" size={20} />
-              Связаться с нами
+            <Button size="lg" asChild variant="outline">
+              <a href="https://t.me/GKgranit19" target="_blank" rel="noopener noreferrer">
+                <Icon name="Send" className="mr-2" size={20} />
+                Написать в Telegram
+              </a>
+            </Button>
+            <Button size="lg" variant="secondary" onClick={() => scrollToSection('portfolio')}>
+              <Icon name="Image" className="mr-2" size={20} />
+              Наши работы
             </Button>
           </div>
         </div>
