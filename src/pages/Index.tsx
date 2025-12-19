@@ -48,21 +48,33 @@ const Index = () => {
   const portfolio = [
     { 
       id: 1, 
-      type: 'Вертикальный памятник из гранита', 
+      type: 'Двойной памятник с портретами', 
       material: 'Гранит',
-      image: 'https://cdn.poehali.dev/projects/5304eb50-a329-46d5-a5e0-ca59d3305487/files/8c23992b-0f3f-4ec5-b135-5df6e4e89dd9.jpg'
+      image: 'https://cdn.poehali.dev/files/IMG_7475.jpeg'
     },
     { 
       id: 2, 
-      type: 'Мраморный комплекс', 
-      material: 'Мрамор',
-      image: 'https://cdn.poehali.dev/projects/5304eb50-a329-46d5-a5e0-ca59d3305487/files/d2fc66bd-171a-45fb-b95b-63902e0d3e68.jpg'
+      type: 'Вертикальный памятник с плиткой', 
+      material: 'Гранит',
+      image: 'https://cdn.poehali.dev/files/56a48e1c-03c7-4ab6-9ea5-5fddc3525d35.jpeg'
     },
     { 
       id: 3, 
-      type: 'Двойной памятник', 
+      type: 'Комплекс с горизонтальной плитой', 
       material: 'Гранит',
-      image: 'https://cdn.poehali.dev/projects/5304eb50-a329-46d5-a5e0-ca59d3305487/files/a6a3eaec-8819-4916-86da-98fb59aa1a82.jpg'
+      image: 'https://cdn.poehali.dev/files/1cb2cfa4-b4a6-4e64-a283-8887a8d71046.jpeg'
+    },
+    { 
+      id: 4, 
+      type: 'Двойной памятник с мозаикой', 
+      material: 'Гранит',
+      image: 'https://cdn.poehali.dev/files/IMG_9164.jpeg'
+    },
+    { 
+      id: 5, 
+      type: 'Элегантный вертикальный памятник', 
+      material: 'Гранит',
+      image: 'https://cdn.poehali.dev/files/IMG_8886.jpeg'
     }
   ];
 
@@ -156,7 +168,7 @@ const Index = () => {
           <p className="text-center text-muted-foreground mb-12">
             Примеры выполненных проектов
           </p>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {portfolio.map((item) => (
               <Card key={item.id} className="overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="h-64 overflow-hidden">
